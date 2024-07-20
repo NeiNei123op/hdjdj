@@ -1,0 +1,175 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>解卡</title>
+<meta name="title" content="解卡">
+<meta name="description" content="太懒了不想做Roblox注入器的密钥？想跳过那些烦人的广告？这个网站就是为你准备的！">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bypass.092333.xyz/">
+<meta property="og:title" content="解卡">
+<meta property="og:description" content="太懒了不想做Roblox执行器的密钥？想跳过那些烦人的广告？这个网站就是为你准备的！">
+<meta property="og:image" content="images/unsplash/back.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://bypass.092333.xyz/">
+<meta property="twitter:title" content="解卡">
+<meta property="twitter:description" content="太懒了不想做Roblox执行器的密钥？想跳过那些烦人的广告？这个网站就是为你准备的！">
+<meta property="twitter:image" content="https://i.ibb.co/DVD9nPV/D808-E03-B-4994-44-D4-93-C6-003-F82966032.jpg">
+<link rel="stylesheet" href="moops.css">
+</head>
+
+<body style="background-image: url('images/unsplash/1.png'); background-attachment: fixed;">
+<div class="loader">正在绕过...</div>
+<div id="form-container">
+<div class="bigt" style="color: #fff;">解卡</div>
+<input type="text" id="url" class="textbox" placeholder="需要绕过的URL" required="">
+<button id="bypassButton" class="button">绕过</button>
+<div class="line"></div>
+<div class="box">
+<fardt style="color: #fff; text-align: center;">支持的绕过网站：</fardt>
+</div>
+<script>
+document.getElementById('poopie').addEventListener('click', function () {
+window.location.assign("list.html");
+});
+</script>
+
+<!-- 贡献者 -->
+<div class="box">
+<fardt style="color: #fff;">贡献者：</fardt>
+<p>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dna">
+<!-- SVG paths here -->
+</svg>
+本网站归属:空白大帝
+</p>
+<p>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="blue" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dna">
+<!-- SVG paths here -->
+</svg>
+空白大帝
+</p>
+</div>
+
+<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=t7pjhDiRCAjUkylhkkQ_fITJsE-5Vpi5&authKey=Tc5%2F6ZlyEXB9elqgX4HDcE%2BniBUCGcamNBRjOQDYZDoJfn7dmENlMdPOO9TM8T0k&noverify=0&group_code=591604331" class="dbutton">加入QQ群</a>
+</div>
+
+<script>
+document.getElementById('bypassButton').addEventListener('click', function () {
+const urlInput = document.getElementById('url');
+const url = urlInput.value;
+if (!url) {
+// document.body.innerHTML += '<div class="notification">Please enter a URL to bypass.</div>';
+return;
+}
+document.querySelector('.loader').style.display = 'block';
+let bypassUrl;
+let bypassType;
+if (url.includes('spdmteam')) {
+const hwid = url.split('?hwid=')[1].split('&')[0];
+bypassUrl = `https://stickx.top/api-arceusx/?hwid=${encodeURIComponent(hwid)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('mobile.codex.lol')) {
+const token = url.split('?token=')[1];
+bypassUrl = `https://stickx.top/api-codex/?token=${encodeURIComponent(token)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('https://gateway.platoboost.com/a/2569')) {
+const id = url.split('?id=')[1];
+bypassUrl = `https://stickx.top/api-hydrogen/?hwid=${encodeURIComponent(id)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('hohohubv')) {
+const hwid = url.split('?hwid=')[1];
+bypassUrl = `https://stickx.top/api-hohohubv/?hwid=${encodeURIComponent(hwid)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('trigonevo.com') || url.includes('https://pandadevelopment.net/getkey?service=trigon-evo')) {
+const hwid = url.includes('trigonevo.com') ? url.split('/?hwid=')[1] : url.split('&hwid=')[1];
+bypassUrl = `https://stickx.top/api-trigon/?hwid=${encodeURIComponent(hwid)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('https://gateway.platoboost.com/a/8')) {
+const id = url.split('?id=')[1];
+bypassUrl = `https://stickx.top/api-delta/?hwid=${encodeURIComponent(id)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('https://pandadevelopment.net/getkey?service=vegax')) {
+const hwid = url.split('&hwid=')[1];
+bypassUrl = `https://stickx.top/api-vegax/?hwid=${encodeURIComponent(hwid)}&api_key=E99l9NOctud3vmu6bPne`;
+} else if (url.includes('https://flux.li/android/external/start.php?HWID=')) {
+const hwid = url.split('?HWID=')[1];
+bypassUrl = `https://stickx.top/api-fluxus/?hwid=${encodeURIComponent(hwid)}&api_key=E99l9NOctud3vmu6bPne`;
+} else {
+bypassType = 'yes'
+bypassUrl = `https://ethos-api-temp.onrender.com/api/bypass?link=${encodeURIComponent(url)}`;
+}
+
+if (bypassType !== 'yes' && bypassType !== 'key') {
+document.querySelector('.loader').style.display = 'none';
+
+fetch(bypassUrl).then(response => response.json()).then(data => {
+
+if (data.key) {
+const bypassContainer = document.getElementById('form-container');
+bypassContainer.innerHTML = `
+<div style="color: #fff;">
+<h2>Success! Your key is:</h2>
+<input type="text" class="textbox" value="${data.key}" readonly>
+<div class="box">
+<button id="copyButton" class="button" style="width: auto; height: clamp(80px, calc(15vh - 10px), 160px);">Copy</button>
+<button id="newLinkButton" class="button" style="height: clamp(80px, calc(15vh - 10px), 160px);">Bypass New Link</button>
+</div>
+</div>`;
+document.getElementById('copyButton').addEventListener('click', function () {
+const keyInput = document.querySelector('.textbox');
+keyInput.select();
+document.execCommand('copy');
+// document.body.innerHTML += `<div class="notification" onclick="setTimeout(function() { this.parentNode.removeChild(this); }, 1000)"> Copied key successfully!</div>`
+
+
+});
+newLinkButton.addEventListener('click', function () {
+location.reload();
+});
+
+
+newLinkButton.style.display = 'block';
+} else {
+if (data.message && data.message === "Invalid HWID") {
+urlInput.value = "Invalid HWID";
+} else {
+alert("Bypass failed.");
+}
+}
+}).catch(error => {
+document.querySelector('.loader').style.display = 'none';
+console.error('Error:', error);
+alert("Bypass success, if an error occured join our discord to report this issue.")
+});
+} else {
+fetch(bypassUrl).then(response => response.json()).then(data => {
+document.querySelector('.loader').style.display = 'none';
+
+if (typeof data.bypassed !== 'undefined') {
+const bypassContainer = document.getElementById('form-container');
+bypassContainer.innerHTML = `
+<div style="color: #fff;">
+<h2>Success! Your link is:</h2>
+<input type="text" class="textbox" value="${data.bypassed}" readonly>
+<div class="box">
+<button id="copyButton" class="button" style="width: auto; height: clamp(80px, calc(15vh - 10px), 160px);">Copy</button>
+<button id="newLinkButton" class="button" style="height: clamp(80px, calc(15vh - 10px), 160px);">Bypass New Link</button>
+</div>
+</div>`;
+document.getElementById('copyButton').addEventListener('click', function () {
+const keyInput = document.querySelector('.textbox');
+keyInput.select();
+document.execCommand('copy');
+// document.body.innerHTML += `<div class="notification" onclick="setTimeout(function() { this.parentNode.removeChild(this); }, 1000)"> Copied key successfully!</div>`
+})
+newLinkButton.addEventListener('click', function () {
+location.reload();
+});
+} else {
+alert("Invaild URL.");
+}
+}
+)
+}
+
+});</script>
+
+</body>
